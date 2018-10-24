@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+    // var arr = [100,1,5,7,3,9,56,3,8];
+    // var counter = 0;
+    // for(var i=0;i<arr.length;i++) {
+    //     for(var j=i+1;j<arr.length;j++) {
+    //         counter++;
+    //         if(arr[i]>arr[j])
+    //         {
+    //             var temp = arr[i];
+    //             arr[i]=arr[j];
+    //             arr[j]=temp;
+                
+    //         }
+    //     }
+    // }
+
+    var arr = [100,1,5,7,3,9,56,3,8];
+    var counter = 0;
+    for(var i=0;i<arr.length;i++) {
+        for(var j=i+1;j<arr.length;j++) {
+            counter++;
+            if(arr[i]>arr[j]){
+                var temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }  
+    }
+
+    </script>
+</head>
+<body>
+    test
+</body>
+</html>

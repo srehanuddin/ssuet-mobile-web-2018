@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // var arr = [1,2.3,4,5];
+    // for(let val of arr){
+    //     console.log(val)
+    // }
+    function abc (){
+        console.log(this);
+        this.name = "xyz";
+        // return a + b;
+    }
+    var a = abc();
+    // a.name;
+    
+    function Student(){
+        this.name = "xyz";
+    }
+    var s = new Student();
+    s.name;
+
+    var obj = {};
+    // var sum = ( a, b ) => {
+    //     console.log("test")
+    //     return a+b;
+    // }
+
+    var sum = ( a, b ) => a+b;
+    var i = 10;
+    
+    var result = sum(10, 20 + 1);
+    var result2 = sum(10, 20 + i++);
+    console.log(result)
+    console.log(result2)
+
+    var fn = function (){
+
+    }
+    fn();
+
+ 
+    (function (){
+        var userName = "";
+        var password = "";
+        var email = "";
+ 
+    })();
+    (function (){
+
+    })();
+
+    function fn(op, ...arr){
+        console.log(arr);
+        var result = 0;
+        if(op == '+'){
+            result = 0;
+        } else if(op == '*'){
+            result = 1;
+        }
+        for(var i = 0; i < arr.length; i++){
+            if(op == '+'){
+                result += arr[i];
+            } else if(op == '*'){
+                result *= arr[i];
+            }
+        }
+        console.log(result)
+    }
+    fn("+",2,3);
+    fn("+",2,3,5,8,3);
+    fn("+",2,3,2,5,7,9,65,3,3);
+
+
+    </script>
+</head>
+<body>
+    test
+</body>
+</html>
