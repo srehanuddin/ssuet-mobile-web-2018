@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+ 
+
+    // var arr = [100,1,5,7,3,9,56,3,8];
+    // var counter = 0;
+    // for(var i=0;i<arr.length;i++) {
+    //     for(var j=i+1;j<arr.length;j++) {
+    //         counter++;
+    //         if(arr[i]>arr[j]){
+    //             var temp = arr[i];
+    //             arr[i]=arr[j];
+    //             arr[j]=temp;
+    //         }
+    //     }  
+    // }
+
+    // var arr = [100,1,5,7,3,9,56,3,8];
+    // var sArr = arr.sort((a, b) => a > b);
+    // console.log(sArr)
+
+        // function Student (){
+        //     this.name = "rehan"
+
+        //     this.study =function(){
+        //         console.log("study")
+        //     }
+        // }
+        // var st = []
+        // for(var i = 0; i < 1000000; i++){
+        //     st.push( new Student() )
+        // }
+/*
+        function Student (){
+            this.name = "rehan"
+        }
+        Student.prototype.study = function(){
+            console.log("study 2")
+        }
+        var st = []
+        for(var i = 0; i < 10000; i++){
+            st.push( new Student() )
+        }
+*/
+
+        var arr = [1,2,5,8,0,234,3];
+        var arr2 = [];
+        for(let i = 0; i < arr.length; i++){
+            arr2.push(arr[i] * 2);
+        }
+
+        function mul5 (x){
+            return x * 5;
+        }
+
+        
+        var arr3 = arr.map(x => x*2);
+        var arr4 = arr.map(x => x==2 ? 3 : x);
+        var arr5 = arr.map(mul5);
+
+        Array.prototype.mul2 = function(){
+            var arr = [];
+            for(let i = 0; i < this.length; i++){
+                arr.push(this[i] * 2);
+            }
+            return arr;
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+  
+        function Q (){
+            var myQ = [];
+            this.deQ = function(){
+                return myQ.shift();
+            }
+            this.enQ = function(task){
+                myQ.push( task );
+            }
+        }
+        var q = new Q();
+        q.enQ("a");
+        q.enQ("b");
+        q.enQ("c");
+
+        console.log( q.deQ() );
+        console.log( q.deQ() );
+        q.enQ("d");
+        q.enQ("e");
+        console.log( q.deQ() );
+        console.log( q.deQ() );
+        console.log( q.deQ() );
+        console.log( q.deQ() );
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+

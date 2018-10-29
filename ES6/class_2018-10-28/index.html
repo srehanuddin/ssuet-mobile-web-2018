@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        
+// A variable of a non-primitive type doesn't contain the value directly; instead, it is a reference (similar to a pointer) to an object. (It is not possible in Java to create user-defined value types). Java has eight primitive types: byte , short , int , long , char , boolean , float and double .
+
+
+// 100000 = "rehan"
+// 100001 = "taha"
+// 100002 = "rehan"
+// 100003 = 100005 ,10, 100004
+// 100004 = 100003, 11, 100005
+// 100005 = 100004, 12, 100003
+// 100006 = 100003;
+// 100007 = 100003
+
+
+//         var a = "rehan"
+//         var b = "taha";
+//         var c = a;
+//         var d = [10, 11, 12];
+//         var e  = d;
+
+
+    // var arr = [100,1,5,7,3,9,56,3,8];
+    // var counter = 0;
+    // for(var i=0;i<arr.length;i++) {
+    //     for(var j=i+1;j<arr.length;j++) {
+    //         counter++;
+    //         if(arr[i]>arr[j]){
+    //             var temp = arr[i];
+    //             arr[i]=arr[j];
+    //             arr[j]=temp;
+    //         }
+    //     }  
+    // }
+
+    // var arr = [100,1,5,7,3,9,56,3,8];
+    // var sArr = arr.sort((a, b) => a > b);
+    // console.log(sArr)
+
+        // function Student (){
+        //     this.name = "rehan"
+
+        //     this.study =function(){
+        //         console.log("study")
+        //     }
+        // }
+        // var st = []
+        // for(var i = 0; i < 1000000; i++){
+        //     st.push( new Student() )
+        // }
+/*
+        function Student (){
+            this.name = "rehan"
+        }
+        Student.prototype.study = function(){
+            console.log("study 2")
+        }
+        var st = []
+        for(var i = 0; i < 10000; i++){
+            st.push( new Student() )
+        }
+*/
+
+        // var arr = [1,2,5,8,0,234,3];
+        // var arr2 = [];
+        // for(let i = 0; i < arr.length; i++){
+        //     arr2.push(arr[i] * 2);
+        // }
+
+        // function mul5 (x){
+        //     return x * 5;
+        // }
+
+        
+        // var arr3 = arr.map(x => x*2);
+        // var arr4 = arr.map(x => x==2 ? 3 : x);
+        // var arr5 = arr.map(mul5);
+
+        // Array.prototype.mul2 = function(){
+        //     var arr = [];
+        //     for(let i = 0; i < this.length; i++){
+        //         arr.push(this[i] * 2);
+        //     }
+        //     return arr;
+        // }
+
+            function Q (){
+                var myQ = [];
+                this.deQ = function(){
+                    return myQ.shift();
+                }
+                this.enQ = function(task){
+                    myQ.push( task );
+                }
+            }
+            var q = new Q();
+            q.enQ("a");
+            q.enQ("b");
+            q.enQ("c");
+
+            console.log( q.deQ() );
+            console.log( q.deQ() );
+            q.enQ("d");
+            q.enQ("e");
+            console.log( q.deQ() );
+            console.log( q.deQ() );
+            console.log( q.deQ() );
+            console.log( q.deQ() );
+
+    
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
