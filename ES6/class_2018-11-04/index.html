@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    //     'use strict';
+    //    let a = 1;
+    //    let a = 2; 
+        // a = 1;
+        // console.log(a);
+        
+        // class Human{
+        //     constructor(){
+        //         this.name = "xyz";
+
+        //         this.fn = function(){
+        //             console.log("human")
+        //         }
+        //     }
+
+        //     func(){
+        //         console.log("prototype")
+        //     }
+        // }
+
+        // var h1 = new Human();
+        // h1.name
+        // h1.fn();
+        // h1.func()
+
+        // function f(a, b){
+
+        // }
+        // f(1,2)
+        // f('a', 'b')
+
+
+        /*
+        class Human{
+            constructor(name){
+                this.name = name;
+
+            }
+
+            eat(){
+                console.log("eating")
+            }
+        }
+
+        class Employee extends Human{
+            constructor(name){
+                super(name);
+                this.age = 10;
+                this.working();
+                this.eat();
+            }
+
+            working(){
+                console.log("working")
+            }
+        }
+
+        var h1 = new Employee("rehan");
+        console.log(h1.name);
+        console.log(h1.age);
+        */
+
+        var a = 1;
+        var b = 2;
+        var c = a + b;
+        var e = c + a;
+        var d = b + a;
+
+        /*setTimeout(() => {
+            b = 3;   
+            console.log("Inside")
+        }, 0);
+        console.log(b);
+        */
+
+        /*function fetch(fn){
+            console.log("going to fetch", b);
+            setTimeout(() => {
+                b = 3; 
+                console.log("fetch success")
+                fn(b); 
+            }, 3000);
+        }
+        console.log("Before fetch", b);
+        fetch((function(b){
+            console.log("Middle");
+            return (x) => console.log("Complete", b);
+        })());
+        console.log("After fetch", b);
+        */
+
+        var abc = 1;
+
+        setTimeout(function(){
+            console.log("1");
+            setTimeout(function(){
+                console.log("2");
+                setTimeout(function(){
+                    console.log("3")
+                    setTimeout(function(){
+                        console.log("4");
+                        setTimeout(function(){
+                            console.log("5")
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
+        }, 2000);
+        
+
+        setTimeout(function(){
+            setTimeout(function(){
+                setTimeout(function(){
+                    console.log(3);
+                },2000);
+                console.log(2);
+            },2000);
+            console.log(1);
+        },2000);
+
+
+        var a = [1,2,3,4,5];
+
+        for(var i = 0; i < a.length; i+=2){
+            a[i]++;
+        }
+
+        console.log(a);
+
+
+        var a = [1,2,3,4,5];
+
+        for(var i = 0; i < a.length; i++){
+            if(i % 2 == 0){
+                a[i] *= a[i];
+            }
+            
+        }
+
+        console.log(a);
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
